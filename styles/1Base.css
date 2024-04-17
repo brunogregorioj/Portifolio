@@ -1,0 +1,53 @@
+
+/* Base cores */
+:root{
+    --cor-de-fundo: #ffff;
+    --cor-de-link: #050505;
+    --cor--hover: #c8c8c8;
+    --cor-de-destaque: #D79B00;
+    --cor-de-erro: #f00;
+    --cor-branco: #fff;
+    --cor-azul: #2A7AE4;
+    --cor-azul-claro : #EAF2FD;
+    --cor-titulo: #D79B00;
+ 
+ }
+ 
+ body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+ }
+ 
+ /* cor do Link e Houver */
+ a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+a:hover{
+    color:var(--cor-de-destaque);
+}
+ 
+ @media screen and (min-width: 0) {
+     body {
+      width: auto;
+     }
+      
+  }
+  /*Tablet*/
+  @media screen and (min-width: 768px) {
+      body {
+          width: auto;
+      }
+     
+  }
+  /*Mobile*/
+  @media screen and (min-width: 992px) {
+      body {
+          width: 84rem;
+      }
+      
+  }
