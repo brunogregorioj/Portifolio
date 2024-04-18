@@ -1,35 +1,45 @@
 
+@import url(../styles/2Menu.css);
+@import url(../styles/3Title.css);
+@import url(../styles/4About.css);
+@import url(../styles/5Skills.css);
+@import url(../styles/6Hobbies.css);
+@import url(../styles/7Academic.css);
+@import url(../styles/8Experience.css);
+@import url(../styles/9contact.css);
+@import url(../styles/10footer.css);
+
 /* Base cores */
 :root{
-    --cor-de-fundo: #ffff;
-    --cor-de-link: #050505;
-    --cor--hover: #c8c8c8;
-    --cor-de-destaque: #D79B00;
-    --cor-de-erro: #f00;
-    --cor-branco: #fff;
-    --cor-azul: #2A7AE4;
-    --cor-azul-claro : #EAF2FD;
-    --cor-titulo: #D79B00;
- 
- }
- 
- body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
- }
- 
- /* cor do Link e Houver */
- a {
-    text-decoration: none;
-    color: var(--cor-de-link);
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-blue: #162950;
+    --pink: #F22FB0;
+    --gradient-main: linear-gradient(270deg, #F22FB0 69.27%, rgba(255, 197, 111, 0.9) 100%);
+    --gradient-dark: linear-gradient(178.38deg, #121212 57.18%, #1E3A8A 99.77%);
+
+    --montserrat: "Montserrat";
+    --poppins: "Poppins";
 }
-a:hover{
-    color:var(--cor-de-destaque);
+
+body{
+    background-color: var(--white);
+    background-image: url("../assets/Gradient-2.png"), url(../assets/Gradient.svg);
+    background-position:right bottom, left top;
+    background-repeat: no-repeat;
+    color: var(--dark-blue);
+    font-family: var(--poppins);
+    font-size: 1em;
+    font-weight: 400;
 }
+
+.dark-mode {
+    background-color: var(--black);
+    /* background-image: url("ADICIONAR"), url(ADICIONAR); */
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    color: var(--white);
+  }
  
  @media screen and (min-width: 0) {
      body {
