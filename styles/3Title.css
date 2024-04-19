@@ -1,11 +1,11 @@
-.banner{
+.title{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 4rem;
  }
  
- .banner__container{
+ .title__container{
      margin: 1rem;
  }
  
@@ -52,11 +52,11 @@
  
  
  @media screen and (min-width: 768px) {
-     .banner{
+     .title{
          justify-content: center;
      }
  
-    .banner__container{
+    .title__container{
          padding-left: 1rem;
          margin: none;
          width: 70%;
@@ -84,11 +84,11 @@
  }
  
  @media screen and (min-width: 1200px) {
-     .banner{
+     .title{
          justify-content: center;
      }
  
-    .banner__container{
+    .title__container{
          padding-left: 1rem;
          margin: none;
          width: 40%;
