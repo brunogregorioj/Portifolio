@@ -1,106 +1,173 @@
-.title{
+.title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 4rem;
- }
- 
- .title__container{
-     margin: 1rem;
- }
- 
- .banner__title{
-     font-size: 1.5rem;
-     font-weight: 600;
-     line-height: 130%;
- }
- 
-  .banner__list{
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     padding: 1rem 0;
-     flex-wrap: wrap;
- }
- 
- .banner__list__item{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     
- } 
- 
- .banner__list__link{
-     padding: 1rem 0.5rem;
-     font-size: 0.7rem;
-     font-weight: 600;
-     text-decoration: none;
-     color: var(--dark-blue);
- }
- 
- .banner__list__link:hover {
-       transform: scale(1.1);
-     }
- 
- .banner__list__image{
-     width: 0.5rem;
- }
- 
- .banner__container__image{
-     display: none;
- }  
- 
- 
- @media screen and (min-width: 768px) {
-     .title{
-         justify-content: center;
-     }
- 
-    .title__container{
-         padding-left: 1rem;
-         margin: none;
-         width: 70%;
+}
+
+.title__container {
+    margin: 1rem;
+}
+
+#home .wrapper {
+    height: 53rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    position: relative;
+}
+
+#home .coluna-a {
+    text-align: left;
+    align-self: center;
+  }
+
+#home h1 {
+    font-size: 4.5rem;
+    color: var(--headline);
+    line-height: 110%;
+
+    margin-bottom: 1rem;
+}
+
+#home p {
+    display: inline-flex;
+
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: bold;
+
+    margin-bottom: 3.2rem;
+}
+
+#home .line {
+    border-right: 0.2rem solid var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#home .typing {
+    animation: line-typing 500ms steps(40) infinite normal,
+        typing 2s steps(40) 1.4s normal backwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
     }
-    
-    .banner__container__image{
-         display: block;
-         width: 30%;
+
+    to {
+        width: 27.5rem;
     }
- 
-    .banner__image{
-         padding-left: 1rem;
-         width: 90%;
-     } 
- 
-     .banner__title{
-         font-size: 2em;
-         font-weight: 700;
-     }
- 
-     .banner__list__link{
-         font-size: 1em;
-         padding: 1rem;
-     }
- }
- 
- @media screen and (min-width: 1200px) {
-     .title{
-         justify-content: center;
-     }
- 
-    .title__container{
-         padding-left: 1rem;
-         margin: none;
-         width: 40%;
+}
+
+@keyframes line-typing {
+    from {
+        border-right-color: var(--primary-color);
     }
-    
-    .banner__container__image{
-         display: block;
-         width: 30%;
+
+    to {
+        border-right-color: transparent;
     }
- 
-    .banner__image{
-         padding-left: 1rem;
-         width: 100%;
-     }
- }
+}
+
+.title__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.title__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.title__list__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.title__link {
+    padding: 2rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.title__link:hover {
+    transform: scale(1.1);
+}
+
+.title__list__image {
+    width: 0.5rem;
+}
+
+.title__container__image {
+    display: none;
+    padding-left: 5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        justify-content: center;
+    }
+
+    .title__container {
+        padding-left: 1rem;
+        margin: none;
+        width: 70%;
+    }
+
+    .title__container__image {
+        display: block;
+        width: 30%;
+    }
+
+    .title__image {
+        padding-left: 1rem;
+        width: 90%;
+    }
+
+    .title__title {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .title__link {
+        font-size: 1em;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        justify-content: center;
+    }
+
+    .title__container {
+        padding-left: 1rem;
+        margin: none;
+        width: 40%;
+    }
+
+    .title__container__image {
+        display: block;
+        width: 30%;
+    }
+
+    .title__image {
+        padding-left: 1rem;
+        width: 100%;
+    }
+}
