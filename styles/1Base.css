@@ -17,7 +17,7 @@
     --pink: #F22FB0;
     --gradient-main: linear-gradient(270deg, #F22FB0 69.27%, rgba(255, 197, 111, 0.9) 100%);
     --gradient-dark: linear-gradient(178.38deg, #121212 57.18%, #1E3A8A 99.77%);
-
+    --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
     --montserrat: "Montserrat";
     --poppins: "Poppins";
 }
