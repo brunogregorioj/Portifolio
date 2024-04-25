@@ -15,7 +15,7 @@
 }
 
 .container__input:checked ~ .container__label{
-    background-color: var(--white);
+    background-color: var(--bg-color);
 }
 
 .container__input:checked~.menu__list{
@@ -44,11 +44,10 @@
 
 .menu__list__item{
     padding: 1rem;
-    background-color: var(--white);
 }
 
 .list__menu__link{
-    background-color: var(--dark-blue);
+    background-color: var(-primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -80,7 +79,7 @@
 
     .open__menu__link{
         text-decoration: none;
-        color:var(--dark-blue);
+        color:var(--primary-color);
     }
 
     .open__menu__input:checked~.menu__list{
@@ -90,7 +89,7 @@
     }
 
     .open__menu__input:checked ~ .open__menu__label > .open__menu__categorias{
-        background-color: var(--white);
+        background-color: var(--bg);
         color: var(--dark-blue);
     }
 

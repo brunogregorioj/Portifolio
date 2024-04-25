@@ -1,4 +1,3 @@
-
 @import url(../styles/2Menu.css);
 @import url(../styles/3Title.css);
 @import url(../styles/4About.css);
@@ -10,54 +9,106 @@
 @import url(../styles/10footer.css);
 
 /* Base cores */
-:root{
-    --white: #FFFFFF;
-    --black: #000000;
-    --dark-blue: #162950;
-    --pink: #F22FB0;
-    --gradient-main: linear-gradient(270deg, #F22FB0 69.27%, rgba(255, 197, 111, 0.9) 100%);
-    --gradient-dark: linear-gradient(178.38deg, #121212 57.18%, #1E3A8A 99.77%);
-    --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+
+
+:root {
+    --primary-color: rgb(19, 19, 19);
+    --secundary-color: hwb(0 48% 52% / 0.356);
+    --bg-color: rgb(241, 241, 241);
+    --headline: hsl(0, 0%, 0%);
+    --paragraph: rgb(32, 32, 32);
+    --paragraph-2: hsl(calc(90 + 10), 14%, 3%);
+
     --montserrat: "Montserrat";
     --poppins: "Poppins";
+
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
 }
 
-body{
-    background-color: var(--white);
-    background-image: url("../assets/Gradient-2.png"), url(../assets/Gradient.svg);
-    background-position:right bottom, left top;
-    background-repeat: no-repeat;
-    color: var(--dark-blue);
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--secundary-color);
+
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
     font-family: var(--poppins);
-    font-size: 1em;
     font-weight: 400;
+
+    overflow: overlay;
+
+    background-color: var(--bg-color);
 }
 
-.dark-mode {
-    background-color: var(--black);
-    /* background-image: url("ADICIONAR"), url(ADICIONAR); */
-    background-position: right bottom, left top;
-    background-repeat: no-repeat;
-    color: var(--white);
-  }
- 
- @media screen and (min-width: 0) {
-     body {
-      width: auto;
-     }
-      
-  }
-  /*Tablet*/
-  @media screen and (min-width: 768px) {
-      body {
-          width: auto;
-      }
-     
-  }
-  /*Mobile*/
-  @media screen and (min-width: 992px) {
-      body {
-          width: 84rem;
-      }
-      
-  }
+::-webkit-scrollbar {
+    width: 0.8rem;
+
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5rem;
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--paragraph);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    padding-block: 10rem;
+    padding-inline: 2rem;
+}
+
+section h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+}
+
+section header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+
+    color: var(--primary-color);
+}
+
+section h3 {
+    color: var(--headline);
+}
+
+section p,
+section span {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 130%;
+
+    color: var(--paragraph);
+}

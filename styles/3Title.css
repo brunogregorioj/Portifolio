@@ -1,3 +1,6 @@
+#home{
+    background-color: var(--bg-color);
+}
 .title {
     display: flex;
     flex-direction: row;
@@ -67,7 +70,7 @@
 
 @keyframes line-typing {
     from {
-        border-right-color: var(--primary-color);
+        border-right-color: var(--terciary-color);
     }
 
     to {
