@@ -22,8 +22,7 @@
     --montserrat: "Montserrat";
     --poppins: "Poppins";
 
-    font-size: 62.5%;
-    --nav-height: 7.2rem;
+    font-size: 70.0%;
 }
 
 
@@ -38,20 +37,14 @@ body {
 }
 
 body {
-    background-color: var(--secundary-color);
-
-}
-
-body {
     font-size: 1.6rem;
     text-align: center;
     font-family: var(--poppins);
     font-weight: 400;
-
     overflow: overlay;
-
-    background-color: var(--bg-color);
+    background-color: var(--bg-colorcolor);
 }
+
 
 ::-webkit-scrollbar {
     width: 0.8rem;

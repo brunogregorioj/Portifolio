@@ -111,13 +111,15 @@
     transform: scale(1.1);
 }
 
+
 .title__list__image {
-    width: 0.5rem;
+    width: 0.8rem;
 }
 
 .title__container__image {
+    width: 30rem;
     display: none;
-    padding-left: 5rem;
+    padding-left: 2rem;
 }
 
 

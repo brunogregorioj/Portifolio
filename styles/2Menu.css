@@ -22,17 +22,10 @@
     display: block;
 }
 
-.header__menu{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url("../assets/Menu.svg");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .header__image{
-    padding: 1.5rem;
+    width: 17rem;
+    padding: 1rem;
 }
 
 .menu__list{
@@ -43,14 +36,11 @@
 }
 
 .menu__list__item{
-    padding: 1rem;
+    padding: 5rem;
 }
 
 .list__menu__link{
-    background-color: var(-primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-color: var(--secundary-color);
     text-transform: uppercase;
 }
 
@@ -89,8 +79,8 @@
     }
 
     .open__menu__input:checked ~ .open__menu__label > .open__menu__categorias{
-        background-color: var(--bg);
-        color: var(--dark-blue);
+        background-color: var(--bg-color);
+        color: var(--primary-color);
     }
 
     .open__menu__categorias{
