@@ -4,7 +4,7 @@ section.skills {
 }
 
 section.hobbies{
-  background-color: var(--cor-de-fundo-2);
+  background-color: var(--bg-color);
   padding: 60px 100px;
 }
 
@@ -22,7 +22,6 @@ section.hobbies{
 }
 
 .skills__box, .hobbies__box {
-  background-color:var(--secundary-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -32,13 +31,9 @@ section.hobbies{
   height: 135px;
   border-radius: 20%;
   transition: background 400ms;
-  box-shadow: 1px 2px 64px 16px rgba(0,0,0,0.14);
--webkit-box-shadow: 1px 2px 64px 16px rgba(0,0,0,0.14);
--moz-box-shadow: 1px 2px 64px 16px rgba(0,0,0,0.14);
-
 }
 .skills__box:hover {
-  background: var(--title-orange);
+  background: var(--Tertiary-color);
 }
 
 .hobbies__box {
@@ -46,7 +41,7 @@ section.hobbies{
 }
 
 .hobbies__box:hover{
-  background: var(--title-orange);
+  background: var(--Tertiary-color);
 }
 
 .skills__box ul, .hobbies__box ul {
