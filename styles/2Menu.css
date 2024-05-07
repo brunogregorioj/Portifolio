@@ -15,7 +15,7 @@
 }
 
 .container__input:checked ~ .container__label{
-    background-color: var(--bg-color);
+    background-color: var(--secundary-color);
 }
 
 .container__input:checked~.menu__list{
@@ -40,8 +40,11 @@
 }
 
 .list__menu__link{
-    background-color: var(--secundary-color);
+    background-color: var(--title-orange);
     text-transform: uppercase;
+}
+.list__menu__link:houver{
+    color: var(--title-orange);
 }
 
 .open__menu{

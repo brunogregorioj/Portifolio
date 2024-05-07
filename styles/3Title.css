@@ -37,6 +37,7 @@
     margin-bottom: 1rem;
 }
 
+
 #home p {
     display: inline-flex;
 
@@ -70,7 +71,7 @@
 
 @keyframes line-typing {
     from {
-        border-right-color: var(--terciary-color);
+        border-right-color: var(--title-orange);
     }
 
     to {
@@ -104,11 +105,12 @@
     font-size: 0.7rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--primary-color);
 }
 
 .title__link:hover {
-    transform: scale(1.1);
+    transform: scale(1.0);
+    color: var(--title-orange);
 }
 
 

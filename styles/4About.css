@@ -6,7 +6,7 @@
   margin-inline: auto;
   padding-inline: 2.2rem;
   gap: 15rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 #about {
@@ -17,9 +17,8 @@
 
 #about h2 {
   font-size: 2.4rem;
-  color: var(--headline);
+  color: var(--title-orange);
   line-height: 110%;
-
   margin-bottom: 1rem;
 }
 
@@ -43,7 +42,7 @@
 }
 
 #about img {
-  width: 30rem;
+  width: 25rem;
 
   border-radius: 2rem;
   box-shadow: 0 0 2rem black;

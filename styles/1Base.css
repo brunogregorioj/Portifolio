@@ -1,28 +1,28 @@
 @import url(../styles/2Menu.css);
 @import url(../styles/3Title.css);
 @import url(../styles/4About.css);
-@import url(../styles/5Skills.css);
-@import url(../styles/6Hobbies.css);
-@import url(../styles/7Academic.css);
-@import url(../styles/8Experience.css);
-@import url(../styles/9contact.css);
-@import url(../styles/10footer.css);
+@import url(../styles/5SkillsHobbies.css);
+@import url(../styles/6Academic.css);
+@import url(../styles/7Experience.css);
+@import url(../styles/8contact.css);
+@import url(../styles/9footer.css);
 
 /* Base cores */
 
 
 :root {
     --primary-color: rgb(19, 19, 19);
-    --secundary-color: hwb(0 48% 52% / 0.356);
+    --secundary-color: rgb(240, 237, 233);
     --bg-color: rgb(241, 241, 241);
     --headline: hsl(0, 0%, 0%);
+    --title-orange: hsl(37, 100%, 50%);
     --paragraph: rgb(32, 32, 32);
-    --paragraph-2: hsl(calc(90 + 10), 14%, 3%);
+    --paragraph-2: hsl(90 , 14%, 3%);
 
     --montserrat: "Montserrat";
     --poppins: "Poppins";
 
-    font-size: 70.0%;
+    font-size: 60.5%;
 }
 
 
