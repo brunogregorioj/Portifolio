@@ -9,7 +9,7 @@ section.hobbies{
 }
 
 .skills__title, .hobbies__title{
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   margin-bottom: 30px;
   color: var(--title-orange);
 }

@@ -14,7 +14,7 @@
     --primary-color: rgb(19, 19, 19);
     --secundary-color: rgb(240, 237, 233);
     --Tertiary-color:hsl(0, 0%, 83%);
-    --bg-color: rgb(241, 241, 241);
+    --bg-color: rgb(255, 255, 255);
     --headline: hsl(0, 0%, 0%);
     --title-orange: hsl(37, 100%, 50%);
     --paragraph: rgb(32, 32, 32);
@@ -43,7 +43,7 @@ body {
     font-family: var(--poppins);
     font-weight: 400;
     overflow: overlay;
-    background-color: var(--bg-colorcolor);
+    background-color: var(--bg-color);
 }
 
 
@@ -105,4 +105,14 @@ section span {
     line-height: 130%;
 
     color: var(--paragraph);
+}
+.line__title{
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    color: var(--title-orange);
+    margin-bottom: .25rem !important;
 }
