@@ -2,92 +2,104 @@ section.experience{
     padding: 64px 0;
     background-color: var(--cor-de-fundo-2);
 }
+.experience__section__title{
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+  color: var(--title-orange);
+}
 
+.experience__title{
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+  color: var(--title-orange);
+
+}
 .experiencie__box {
     padding: 62px ;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#box-fc {
-    background-color: var(--cor-de-fundo);
-    flex-direction: row-reverse;
-}
-#box-ps {
-    background-color: var(--cor-de-fundo-2);
-}
-#decodificaor {
-    background-color: var(--cor-de-fundo-2);
-}
-
-.experience__img {
-    border-radius: 35px;
-    padding: 10px;
-    width: 542px;
-}
-
-
-.experience__info {
+.card {
+    position: relative;
+    width: 350px;
+    aspect-ratio: 16/9;
+    background-color:var(--bg-color);
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 25em;
-
-}
-
-.xp-title {
-    font-size: 22px;
-    margin: 8px 0;
-}
-.experience__text {
-    color: var(--cor-descricao);
-    margin: 12px 0;
-    font-weight: 400;
-    font-size: 14px;
- 
-}
-
-.experiencia__botao--repo {
-    color: var(--cor-de-fundo);
-    width: 90px;
-    height: 30px;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+   .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  } 
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover img {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #777;
     border: none;
-    font-weight: bold;
-    margin-right: 1em;
-    border-radius: 5px;
-    background-color: var(--cor-titulo);
-    transition: all 1s;
-    padding: auto;
-    text-align: center;
-}
-
-.experiencia__botao--repo:hover {
-    color: var(--cor-de-fundo-2);
+    color: white;
     cursor: pointer;
-    background-color: var(--cor-de-link2);
-}
-
-.experiencia__botao--demo {
-    color: var(--cor-de-fundo);
-    width: 90px;
-    height: 30px;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: var(--cor-de-link);
-    transition: all 1s;
-}
-
-.experiencia__botao--demo:hover {
-    cursor: pointer;
-    background-color: var(--cor-descricao);
-}
-
-#btn-demo, #btn-repo{
-    width: 200px;
-}
-
-.digital__art__img {
-    border-radius: 15px;
-    width: 40%;
-}
+  }
+  
+  .secondary {
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+  }
+  
