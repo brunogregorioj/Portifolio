@@ -34,7 +34,7 @@
                     <li class="menu__list__item"><a class="list__menu__link" href="#hobbies">Hobbies</a></li>
                     <li class="menu__list__item"><a class="list__menu__link" href="#formacoes">Formações</a></li>
                     <li class="menu__list__item"><a class="list__menu__link" href="#xp">Experiência</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#contato">Contato</a></li>
+                    <li class="menu__list__item"><a class="list__menu__link" href="#contact">Contato</a></li>
                 </ul>
 
                 <img class="header__image" id="logo" src="./assets/img/LogoNome.svg" alt="Logo do Portfólio">
@@ -311,66 +311,52 @@
                 </div>
 
                 <!-- Sessão de Contato -->
-                <section class="formcontato">
-                    <div id="contato" class="formcontato__contacto">
-                        <div class="formcontato--esquerda">
-                            <img class="formcontato__img" src="assets/contact_image.png">
-                        </div>
-                        <div class="formcontato__text">
-                            <h2 class="formcontato__title">Contato</h2>
-                            <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                            <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais
-                                rápido possível. </h3>
-                            <form action="https://api.staticforms.xyz/submit" method="post" class="formcontato__form"
-                                id="form-contato">
-                                <input type="hidden" name="accessKey" value="4c22e4d8-62fc-4c42-9ab8-004546342da2">
-                                <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-
-
-                                <input class="formcontato__input" name="name" type="text" maxlength="50" id="nome"
-                                    required placeholder="Nome">
-                                <span></span>
-                                <input class="formcontato__input" name="email" type="email" maxlength="50" id="email"
-                                    required placeholder="Email">
-                                <span></span>
-                                <input class="formcontato__input" name="subject" type="text" maxlength="50" id="assunto"
-                                    required placeholder="Assunto">
-                                <span></span>
-                                <textarea class="formcontato__textarea" name="message" rows="5" cols="40"
-                                    maxlength="300" id="mensagem" required placeholder="Sua mensagem"></textarea>
-                                <span></span>
-                                <h3 id="mensagem-erro"></h3>
-                                <h3 id="mensagem-sucesso"></h3>
-
-                                <button class="formcontato__botao" id="btn-enviar">Enviar mensagem</button>
-                            </form>
-                        </div>
+                <section class="contact">
+                    <h2 class="contact__title" id="contact">Contato</h2>
+                    <hr class="line__title">
+                    </hr>
+                    <div class="card__cont">
+                        <span class="title__cont">Deixe o seu comentário</span>
+                        <form class="form__cont">
+                            <div class="group__cont">
+                                <input placeholder="‎" type="text" required="">
+                                <label for="name">Nome</label>
+                            </div>
+                            <div class="group__cont">
+                                <input placeholder="‎" type="email" id="email" name="email" required="">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="group__cont">
+                                <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+                                <label for="comment">Comentário</label>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
                     </div>
                 </section>
-        </main>
-        <!-- Sessão de Footer/Rodapé-->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
-                            <a href="#">Bruno Henrique</a>.
-                        </p>
-                    </div>
+                <!-- Sessão de Footer/Rodapé-->
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                                    <a href="#">Bruno Henrique</a>.
+                                </p>
+                            </div>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Script Linkado do seu documento de JavaScript -->
-        <script src="scripts/validate.js"></script>
+                </footer>
+                <!-- Script Linkado do seu documento de JavaScript -->
+                <script src="scripts/validate.js"></script>
     </body>
 
 </html>

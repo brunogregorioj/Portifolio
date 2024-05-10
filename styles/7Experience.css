@@ -7,13 +7,6 @@ section.experience{
   margin-bottom: 30px;
   color: var(--title-orange);
 }
-
-.experience__title{
-  font-size: 3.2rem;
-  margin-bottom: 30px;
-  color: var(--title-orange);
-
-}
 .experiencie__box {
     padding: 62px ;
     display: flex;

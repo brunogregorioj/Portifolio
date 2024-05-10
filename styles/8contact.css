@@ -1,92 +1,99 @@
-section.formcontato{
-    padding: 64px;
-}
-
-.formcontato__contacto {
-    padding: 0 64px;
-    display: flex;
-}
-
-.formcontato__img {
-    border-radius: 17px;
-}
-
-.formcontato__title {
-    margin-top: 0;
-    color:var(--cor-titulo);
-}
-.formcontato__text{ 
-    padding: 0px 20px;
-}
-
-.formcontato__subtext{
-    margin-bottom: 18px;
-}
-
-.formcontato__input {
-    width: 400px;
-    height: 32px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+section.contact{
+    padding: 64px 0;
     background-color: var(--cor-de-fundo-2);
-    text-decoration: none;
-    border-radius: 5px;
-    color: var(--cor-texto);
-    font-size: 20px;
+}
+.contact__title{
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+  color: var(--title-orange);
 }
 
-.formcontato__textarea {
-    width: 400px;
-    height: 240px;
+.card__cont {
+    margin-top: 10rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
     display: flex;
-    background-color: var(--cor-de-fundo-2);
-    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title__cont{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .form__cont {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .group__cont{
+    position: relative;
+  }
+  
+  .form__cont .group__cont label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .form__cont .group__cont input,
+  .form__cont .group__cont textarea {
+    padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    color: var(--cor-texto);
-    font-size: 20px;
-}
-
-.formcontato__input::placeholder, .formcontato__textarea::placeholder {
-    color:var(--cor-placeholder);
-    font-size: 16px;
-    text-align: start;
-    padding: 0;
-
-}
-
-.formcontato__botao {
-    width: 200px;
-    height: 35px;
-    color: var(--cor-de-fundo);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .form__cont .group__cont input:placeholder-shown+ label, .form__cont .group__cont textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form__cont .group__cont input:focus,
+  .form__cont .group__cont textarea:focus {
+    border-color: #3366cc;
+  }
+  
+  .form__cont .group__cont input:focus+ label, .form__cont .group__cont textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form__cont .group__cont textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form__cont button {
+    background-color: var(--main-color);
+    color: #fff;
     border: none;
-    font-weight: bold;
     border-radius: 5px;
-    background-color: var(--cor-de-link);
-    transition: all 1s;
-    margin-top: 12px;
-}
-
-.formcontato__botao:hover {
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: var(--cor-descricao);
-}
-
-.formcontato__input:invalid {
-    border-color: red;
-}
-
-#mensagem-erro {
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cor-erro);
-}
-
-#mensagem-sucesso {
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cor-titulo);
-}
+    transition: all 0.3s ease;
+  }
+  
+  .form__cont button:hover {
+    background-color:var(--main-color-hover);
+  }
+  
+  

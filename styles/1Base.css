@@ -14,11 +14,14 @@
     --primary-color: rgb(19, 19, 19);
     --secundary-color: rgb(240, 237, 233);
     --Tertiary-color:hsl(0, 0%, 83%);
+    --main-color:hsl(37, 100%, 50%);
+    --main-color-hover:hsl(37, 95%, 46%);
     --bg-color: rgb(255, 255, 255);
     --headline: hsl(0, 0%, 0%);
     --title-orange: hsl(37, 100%, 50%);
     --paragraph: rgb(32, 32, 32);
     --paragraph-2: hsl(90 , 14%, 3%);
+
 
     --montserrat: "Montserrat";
     --poppins: "Poppins";
