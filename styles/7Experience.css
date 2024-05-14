@@ -1,6 +1,6 @@
 section.experience{
     padding: 64px 0;
-    background-color: var(--cor-de-fundo-2);
+    background-color: var(--bg-color);
 }
 .experience__section__title{
   font-size: 3.2rem;
@@ -16,6 +16,7 @@ section.experience{
 
 .card {
     position: relative;
+    margin-top: 30px;
     width: 350px;
     aspect-ratio: 16/9;
     background-color:var(--bg-color);
