@@ -133,12 +133,12 @@
     .title__container {
         padding-left: 1rem;
         margin: none;
-        width: 70%;
+        width: 100%;
     }
 
     .title__container__image {
         display: block;
-        width: 30%;
+        width: 50%;
     }
 
     .title__image {
@@ -155,6 +155,7 @@
         font-size: 1em;
         padding: 1rem;
     }
+   
 }
 
 @media screen and (min-width: 1200px) {

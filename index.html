@@ -21,53 +21,26 @@
     <!-- Sessão de Menu  -->
 
     <body>
-        <header class="header">
-            <div class="header__container">
-                <input class="container__input" type="checkbox" id="menu">
-                <label for="menu" class="container__label">
-                    <span class="header__menu header__image" id="header__menu"></span>
-                </label>
-
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a class="list__menu__link" href="#about">Sobre mim</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#formacoes">Formações</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#xp">Experiência</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#contact">Contato</a></li>
-                </ul>
-
-                <img class="header__image" id="logo" src="./assets/img/LogoNome.svg" alt="Logo do Portfólio">
+        <div class="all">
+            <div class="menu">
+                <header class="menu___header">
+                    <img  class="menu__img" src="assets/Img/logoNome.svg">
+                    <h3 class="menu__title">Bruno Henrique</h3>
+                </header>
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#about">Sobre mim</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacoes">Formações</a></li>
+                        <li class="menu__list__item"><a href="#xp">Experiência</a></li>
+                        <li class="menu__list__item"><a href="#contact">Contato</a></li>
+                    </ul>
+                    <ul class="menu__mobile">
+                        <li class="menu__mobile__list"><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <ul class="open__menu">
-                <li class="open__menu__item"><a class="open__menu__link" href="#about">About</a></li>
-                <input class="open__menu__input" type="checkbox" id="open__menu">
-                <label for="open__menu" class="open__menu__label">
-                    <li class="open__menu__categorias">Categories</li>
-                </label>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a class="list__menu__link" href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#formacoes">Formações</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#xp">Experiência</a></li>
-                    <li class="menu__list__item"><a class="list__menu__link" href="#contato">Contato</a></li>
-                </ul>
-                <li class="open__menu__item"><a class="open__menu__link" href="#contato">Contato</a></li>
-            </ul>
-
-            <ul class="open__menu__dekstop">
-                <li class="open__menu__item"><a class="open__menu__link" href="#about">Sobre mim</a></li>
-                <li class="open__menu__item"><a class="open__menu__link" href="#skills">Skills</a></li>
-                <li class="open__menu__item"><a class="open__menu__link" href="#hobbies">Hobbies</a></li>
-                <li class="open__menu__item"><a class="open__menu__link" href="#formacoes">Formações</a></li>
-                <li class="open__menu__item"><a class="open__menu__link" href="#xp">Experiência</a></li>
-                <li class="open__menu__item"><a class="open__menu__link" href="#contact">Contato</a></li>
-            </ul>
-            <div class="header_container">
-                <!-- <img class="header__image mood" id="mode-icon-sun" src="ADICIONAR" alt="Mudar de tema: escuro ou claro"> -->
-            </div>
-        </header>
 
         <!-- Sessão de Header/Title/Hero -->
         <main class="main">
@@ -301,7 +274,7 @@
                                 utilizando HTML, CSS e JavaScript. O objetivo principal era implementar conceitos
                                 básicos de desenvolvimento web, incluindo:</p>
                             <button class="card__button secondary"
-                                onclick="window.open('https://github.com/brunogregorioj/Dashboard_Covid.git', '_blank')">Repositório</button>
+                                onclick="window.open('https://github.com/brunogregorioj/ExercicioLogin.git', '_blank')">Repositório</button>
                         </div>
                     </div>
                 </div>
@@ -315,10 +288,9 @@
                 <!-- Sessão de Contato -->
                 <section class="contact" id="contact">
                     <div class="contact__container">
-                        <h2 class="contact__container__title"><strong>café</strong> OU <STrong>CERVEJA?</STrong><br>
-                            <hr class="line__title"> Ei, Sente-se! Se quiser tomar um café ou uma cerveja... <br>meus
-                            contatos estão aí embaixo ;)
-                        </h2>
+                        <h2 class="contact__container__title"><strong>café</strong> OU <STrong>CERVEJA?</STrong></h2>
+                        <h3 class="contact__container__title">Ei, Sente-se! Se quiser tomar um café ou uma cerveja...meus
+                            contatos estão aí embaixo ;)</h3>
                         <div class="contact__content">
                             <div class="card-contact">
                                 <a class="socialContainer containerOne" href="https://github.com/brunogregorioj"
@@ -368,39 +340,32 @@
                         <form class="contact__form__item" onsubmit="return validarFormulario()" id="form">
                             <div>
                                 <label for="name"></label>
-                                <input class="contact__form__link" type="text" id="name" maxlength="50"
-                                    placeholder="Seu Nome">
+                                <input class="contact__form__link" type="text" id="name" maxlength="50" placeholder="Seu Nome" required>
                             </div>
                             <div>
                                 <label for="email"></label>
-                                <input class="contact__form__link" type="email" id="email" placeholder="Seu E-mail">
+                                <input class="contact__form__link" type="email" id="email" placeholder="Seu E-mail" required>
                             </div>
                             <div>
                                 <label for="topic"></label>
-                                <input class="contact__form__link" type="text" id="topic" maxlength="50"
-                                    placeholder="Assunto">
+                                <input class="contact__form__link" type="text" id="topic" maxlength="50" placeholder="Assunto" required>
                             </div>
                             <div>
-                                <label for="textArea"></label>
-                                <textarea class="contact__form__link" type="text" id="textArea" maxlength="500"
-                                    placeholder="Mensagem"></textarea>
+                                <label for="message"></label>
+                                <textarea class="contact__form__link" id="message" maxlength="500" placeholder="Sua Mensagem" required></textarea>
                             </div>
                             <div class="contact__form__submit">
                                 <button class="contact__form__button" type="submit" id="enviar">Enviar</button>
                             </div>
                         </form>
                     </div>
+                    
                 </section>
             </section>
             <!-- Sessão de Footer/Rodapé-->
             <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
                             <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
                                 <a href="#">Bruno Henrique</a>.
-                            </p>
-                        </div>
             </footer>
             <script src="scripts/validate.js"></script>
     </body>

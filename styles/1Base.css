@@ -65,7 +65,7 @@ body {
     background: var(--paragraph);
 }
 
-ul {
+ul ol, ul,li {
     list-style: none;
 }
 

@@ -10,7 +10,7 @@
 .contact__container__title{
   font-size: 10rem;
   font-weight: 700;
-  padding: 4rem 0;
+  padding: 3.5rem 0;
   text-align: left;
   text-transform: uppercase;
   line-height: 150%;
@@ -92,24 +92,12 @@ strong{
   }
 }
 
-
-.contact__content__email{
-  background-image: url(../assets/email.svg);
-  background-repeat: no-repeat;
-  padding-left: 2rem;
-}
-
 .contact__content__list{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.75rem;
   padding: 2rem 0;
-}
-
-.contact__content__image{
-  width: 80%;
-  height: 80%;
 }
 
 .contact__form{
@@ -127,11 +115,11 @@ strong{
 }
 
 .contact__form__title{
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 1.5rem;
   text-transform: uppercase;
   text-align: center;
-  color: var(--dark-blue);
+  color: var(--primary-color);
 }
 
 .contact__form__item{
@@ -153,7 +141,7 @@ strong{
   font-family: var(--poppins);
   font-size: 1.5rem;
   font-weight: 300;
-  color: var(--dark-blue);
+  color: var(--primary-color);
 }
 
 textarea:focus, input:focus, select:focus {
@@ -177,10 +165,10 @@ textarea:focus, select:focus {
   text-decoration: none;
   border: none;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--primary-color);
   width: 6rem;
   padding: 0.75rem;
-  background-image: var(--gradient-main);
+  background-image: var(--main-color);
   border-radius: 3rem;
 }
 
@@ -188,6 +176,12 @@ textarea:focus, select:focus {
     transform: scale(1.1);
 }
 
+@media screen and (min-width: 500px) {
+  .contact__container__title{
+    font-size: 1.9em;
+    font-weight: 700;
+}
+}
 @media screen and (min-width: 768px) {
   .contact{
       display: flex;
@@ -199,6 +193,7 @@ textarea:focus, select:focus {
       padding-left: 2rem;
       width: 50%;
  }
+ 
 
   .contact__form{
       width: 50%;
@@ -209,7 +204,7 @@ textarea:focus, select:focus {
   }
 
   .contact__container__title{
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 700;
   }
 
@@ -231,3 +226,4 @@ textarea:focus, select:focus {
       padding-right: none;
   }
 }
+
