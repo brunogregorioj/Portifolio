@@ -43,9 +43,6 @@
 
 #about img {
   width: 25rem;
-
   border-radius: 2rem;
-  box-shadow: 0 0 2rem black;
-
   transition: 600ms;
 }
