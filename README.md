@@ -1,6 +1,7 @@
 # Portfólio de Bruno Henrique Gregório
 
-![Imagem do projeto](/assets/Img/logoReame.png)
+<div align="center"> <img src="/assets/Img/logoReadme.png"> </div>
+
 
 ---
 
