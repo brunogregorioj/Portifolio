@@ -1,6 +1,6 @@
 # Portfólio de Bruno Henrique Gregório
 
-<div align="center"!>[Imagem do projeto](/assets/Img/logoReadme.png)</div>
+<div align="center"!><img src="/assets/Img/logoReadme.png></div>
 
 ---
 
