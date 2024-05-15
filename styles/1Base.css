@@ -17,6 +17,8 @@
     --main-color:hsl(37, 100%, 50%);
     --main-color-hover:hsl(37, 95%, 46%);
     --bg-color: rgb(255, 255, 255);
+    --color-card:#777;
+   
     --headline: hsl(0, 0%, 0%);
     --title-orange: hsl(37, 100%, 50%);
     --paragraph: rgb(32, 32, 32);

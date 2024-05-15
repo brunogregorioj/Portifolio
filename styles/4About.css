@@ -46,24 +46,35 @@
   border-radius: 2rem;
   transition: 600ms;
 }
-@media (max-width: 320px) {
-  .wrapper {
-    padding-inline: 2rem;
+/* Adicione regras de mídia para telas menores */
+@media screen and (max-width: 767px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre as colunas */
+  }
+
+  .coluna-a,
+  .coluna-b {
+    width: 90%; /* Ambas as colunas ocupam toda a largura */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .coluna-b img {
+    margin-top: 0.1rem; /* Adiciona um espaço entre a imagem e o texto */
+    max-width: 80%; /* Reduz a largura máxima da imagem */
+    margin-left: 15%;
+  }
+
+  #about .conteudo p {
+    font-size: 1.6rem; /* Reduz o tamanho do texto */
+    margin-block: 2rem; /* Reduz o espaçamento entre os parágrafos */
   }
 }
 
-@media (max-width: 410px) {
-  #home .wrapper::before {
-    width: 24rem;
-    height: 24rem;
-
-    bottom: -0.5rem;
+@media screen and (max-width: 499px) {
+  /* Para telas ainda menores, ajuste o espaçamento entre as colunas */
+  .about__container {
+    gap: 1rem;
   }
-}
-@media (max-width: 500px) {
-  #about .conteudo a:nth-child(2) {
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1024px) {
 }

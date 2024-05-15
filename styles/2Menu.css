@@ -41,7 +41,7 @@ nav ul.menu__list{
     width: 32px;
 }
 
-.menu__list__item{
+.menu__list__item, .menu__mobile__list{
   font-size: 18px;
   color: var(--main-color);
   cursor: pointer;
@@ -53,17 +53,17 @@ nav ul.menu__list{
   transition-property: color;
 }
 .menu__list__item:focus,
-.menu__list__item:hover {
+.menu__list__item:hover,.menu__mobile__list {
   color: var(--main-color);
 }
 
-.menu__list__item:focus:after,
-.menu__list__item:hover:after {
+.menu__list__item:focus:after,.menu__mobile__list:focus::after,
+.menu__list__item:hover:after,.menu__mobile__list:hover::after {
   width: 100%;
   left: 0%;
 }
 
-.menu__list__item:after {
+.menu__list__item::after,.menu__mobile__list:after {
   content: "";
   pointer-events: none;
   bottom: -2px;
